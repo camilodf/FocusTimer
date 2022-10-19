@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+
+  display: grid;
+}
+
+main {
+  margin: auto;
+  min-width: 20rem;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.function {
+  text-align: center;
+}
+
+.timer span {
+
+  color: #323238;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+
+.hide {
+  display: none;
+}
+
+.controls {
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+}
+
+.controls button {
+  border: none;
+  background-color: transparent;
+}
+
+.controls svg {
+
+  height: 3.5rem;
+  width: 3.5rem;
+
+  border: none;
+  fill: none;
+}
+
+.card-wrapper {
+
+  width: 20rem;
+  margin-top: 5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card-wrapper button {
+  background: transparent;
+  height: 8rem;
+  width: 8rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.card-wrapper svg {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 4px;
+}
+
+.press svg path:nth-child(1) {
+  fill: #02799D;
+}
+
+.press svg path:nth-child(2) {
+  fill: #FFFFFF;
+}
+
+@media (min-width: 650px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+  }
+
+  main {
+    border: 1px solid red;
+    width: 60%;
+    height: 20rem;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0;
+  }
+
+  .card-wrapper {
+    margin: 0
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+  }
+
+  main {
+    width: 83rem;
+    height: 34rem;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0;
+  }
+
+  .timer span {
+    font-size: 13rem;
+    line-height: 14.8rem;
+  }
+
+  .controls {
+    margin-top: 4.8rem;
+    gap: 4rem;
+
+  }
+
+  .controls svg {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .card-wrapper {
+    margin: 0;
+    width: 30rem;
+    height: 100%;
+
+    gap: 3.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-wrapper button {
+    padding-right: 2rem;
+    height: 12rem;
+    width: 12rem;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .card-wrapper svg {
+
+    width: 12rem;
+    height: 12rem;
+
+  }
+}
